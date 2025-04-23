@@ -1,0 +1,38 @@
+:root {
+    --main-bg: hsl(210, 50%, 96%);
+}
+
+body {
+    background-color: var(--main-bg, white); /* fallback to white */
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: aliceblue; /* color name */
+    padding: 1%;
+}
+
+h1 {
+    color: rgb(67, 0, 131); /* rgb color */
+}
+
+h2 {
+    color: #681793; /* hex code */
+}
+
+h3 {
+    color: hsl(300, 50%, 50%, 0.8); /* hsl with alpha */
+}
+
+h4 {
+    color: color-mix(in srgb, blue 60%, red 40%); /* color mix */
+}
+
+#celebration {
+    background-color: rgb(255, 187, 233);
+}
+
+a {
+    color: red;
+}
