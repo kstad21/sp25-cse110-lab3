@@ -5,6 +5,31 @@
     font-style: normal;
 }
 
+* {
+    line-height: 1;
+}
+
+:is(header, footer) {
+    background-color: lightgray;
+}
+
+label ~ input {
+    color: green;
+}
+
+audio + video {
+    border: 2px solid rgb(70, 255, 70);
+}
+
+div.flex-container {
+    background-color: #a7a5ff;
+}
+
+section:has(video) {
+    background-color: rgb(181, 237, 255);
+    padding: 1%;
+}
+
 /* Root Variables */
 :root {
     --main-bg: hsl(0, 0%, 100%);
@@ -52,6 +77,18 @@ h1 {
     text-align: center; /* text align */
 }
 
+a:hover {
+    color: darkred;
+}
+
+a:active {
+    color: orange;
+}
+
+div h1 {
+    background-color: rgb(255, 255, 199);
+}
+
 /* Flexbox Container */
 .flex-container {
     display: flex;
@@ -89,6 +126,11 @@ h1 {
     border-bottom: 1px solid #dd9933; /* longhand border */
     border-left: 1px solid #dd9933; /* longhand border */
     border-radius: 10px;
+}
+
+form input[id], form select[id], form textarea[id] {
+    border: 1px solid blue;
+    font-family: 'Blackout Sunrise';
 }
 
 /* Media Queries */
