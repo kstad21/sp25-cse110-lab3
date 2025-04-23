@@ -90,3 +90,38 @@ a:active {
 form {
     border: 3px dotted teal;
 }
+
+/* Flexbox container with more than 2 children */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: #f0f0f0;
+    padding: 1rem;
+}
+
+.flex-container > div {
+    background-color: #cce5ff;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: stretch;
+    background-color: #ffe6cc;
+    padding: 1rem;
+}
+
+.grid-container > div {
+    background-color: #ffcc99;
+    padding: 1rem;
+    border: 1px solid #dd9933;
+    border-radius: 10px;
+}
