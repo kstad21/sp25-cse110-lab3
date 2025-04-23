@@ -28,4 +28,4 @@ Add previous meeting notes or other reference materials
 
 ### Action Items
 Add action items that you create during the meeting and check boxes as you make progress
-- [ x ] Action, asignee
+- [ ] Action, asignee
