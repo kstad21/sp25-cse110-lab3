@@ -39,7 +39,7 @@ section:has(video) {
 body {
     background-color: var(--main-bg, white); /* fallback to white */
     color: black; /* text color */
-    font-family: 'Georgia, 'Times New Roman', Times, serif';
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
     margin: 5%; /* shorthand margin */
     border: 0.1cm solid purple; /* shorthand border */
     border-radius: 12px; /* border */
