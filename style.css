@@ -6,33 +6,61 @@ body {
     background-color: var(--main-bg, white); /* fallback to white */
     color: black;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 5%; /* shorthand margin */
+    padding: 1.5 rem; /* shorthand padding */
+    border: 0.1 cm solid purple; /* border shorthand */
+    border-radius: 12px; /* border */
 }
 
 header {
     background-color: aliceblue; /* color name */
     padding: 1%;
+    /* longhand padding */
+    padding-top: 1%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    /* longhand margin */
+    margin-top: 0.5 em;
+    margin-right: 1 em;
+    margin-bottom: 0.5 em;
+    margin-left: 1 em;
+    /* longhand border */
+    border-style: solid;
+    border-color: navy;
+    border-width: 2px;
+    border-radius: 10px;
 }
 
 h1 {
     color: rgb(67, 0, 131); /* rgb color */
+    margin: 1%; /* shorthand margin */
 }
 
 h2 {
     color: #681793; /* hex code */
+    margin: 2%; /* shorthand margin */
 }
 
 h3 {
     color: hsl(300, 50%, 50%, 0.8); /* hsl with alpha */
+    margin: 3%;
 }
 
 h4 {
     color: color-mix(in srgb, blue 60%, red 40%); /* color mix */
+    margin: 4%;
 }
 
 #celebration {
+    border: 2px dashed;
     background-color: rgb(255, 187, 233);
 }
 
 a {
     color: red;
+}
+
+form {
+    border: 3px dotted teal;
 }
