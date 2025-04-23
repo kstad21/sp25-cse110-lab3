@@ -6,33 +6,54 @@ body {
     background-color: var(--main-bg, white); /* fallback to white */
     color: black;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    padding: 2rem; /* relative unit 1: rem */
+    margin: 5%; /* shorthand margin */
+    border: 0.1 cm solid purple; /* border shorthand */
+    border-radius: 12px; /* border */
+    padding: 2rem; /* relative unit 1: rem, shorthand padding */
 }
 
 header {
     background-color: aliceblue; /* color name */
-    padding: 1%; /* relative unit 2 */
+    /* longhand padding */
+    padding-top: 1%; /* relative unit 2 */
+    padding-right: 2%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    /* longhand margin */
+    margin-top: 0.5 em;
+    margin-right: 1 em;
+    margin-bottom: 0.5 em;
+    margin-left: 1 em;
+    /* longhand border */
+    border-style: solid;
+    border-color: navy;
+    border-width: 2px;
+    border-radius: 10px;
 }
 
 h1 {
     color: rgb(67, 0, 131); /* rgb color */
+    margin: 1%; /* shorthand margin */
 }
 
 h2 {
     color: #681793; /* hex code */
-    margin-left: 10%; /* relative unit 3: percent */
+    margin: 2%; /* shorthand margin, relative unit 3 */
 }
 
 h3 {
     color: hsl(300, 50%, 50%, 0.8); /* hsl with alpha */
+    margin: 3%;
 }
 
 h4 {
     color: color-mix(in srgb, blue 60%, red 40%); /* color mix */
+    margin: 4%;
     font-size: 11pt; /* absolute unit 1 */
 }
 
 #celebration {
+    border: 2px dashed;
     background-color: rgb(255, 187, 233);
     padding: 0.05cm; /* absolute unit 2 */
 }
@@ -40,4 +61,8 @@ h4 {
 a {
     font-size: 12pt; /* absolute unit 3 */
     color: red;
+}
+
+form {
+    border: 3px dotted teal;
 }
