@@ -1,36 +1,27 @@
+/* Root Variables */
 :root {
     --main-bg: hsl(0, 0%, 100%);
 }
 
+/* Body Styles */
 body {
     background-color: var(--main-bg, white); /* fallback to white */
     color: black; /* text color */
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 5%; /* shorthand margin */
     border: 0.1 cm solid purple; /* border shorthand */
     border-radius: 12px; /* border */
     padding: 2rem; /* relative unit 1: rem, shorthand padding */
-    position: absolute;
+    position: static; /* Removed absolute positioning */
 }
 
+/* Header Styles */
 header {
     background-color: aliceblue; /* color name */
-    /* longhand padding */
-    padding-top: 1%; /* relative unit 2 */
-    padding-right: 2%;
-    padding-bottom: 1%;
-    padding-left: 2%;
-    /* longhand margin */
-    margin-top: 0.5 em;
-    margin-right: 1 em;
-    margin-bottom: 0.5 em;
-    margin-left: 1 em;
-    /* longhand border */
-    border-style: solid;
-    border-color: navy;
-    border-width: 2px;
+    padding: 1%; /* relative unit 2 */
+    margin: 0.5em 1em; /* shorthand margin */
+    border: 2px solid navy;
     border-radius: 10px;
-    /* height, width */
     height: 80%;
     width: 80%;
     position: relative;
@@ -43,55 +34,7 @@ h1 {
     text-align: center; /* text align */
 }
 
-h2 {
-    color: #681793; /* hex code */
-    margin: 2%; /* shorthand margin, relative unit 3 */
-}
-
-h3 {
-    color: hsl(300, 50%, 50%, 0.8); /* hsl with alpha */
-    margin: 3%;
-}
-
-h4 {
-    color: color-mix(in srgb, blue 60%, red 40%); /* color mix */
-    margin: 4%;
-    font-size: 11pt; /* absolute unit 1 */
-}
-
-section {
-    /* min, max width/height */
-    max-width: 80%;
-    min-width: 10%;
-    max-height: 80%;
-    min-height: 10%;
-}
-
-#celebration {
-    border: 2px dashed;
-    background-color: rgb(255, 187, 233);
-    padding: 0.05cm; /* absolute unit 2 */
-}
-
-a {
-    font-size: 12pt; /* absolute unit 3 */
-    color: red;
-}
-
-a:hover {
-    color: darkred;
-    text-decoration:dashed;
-}
-
-a:active {
-    color:darkorange;
-}
-
-form {
-    border: 3px dotted teal;
-}
-
-/* Flexbox container with more than 2 children */
+/* Flexbox Container */
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -109,6 +52,7 @@ form {
     flex: 1;
 }
 
+/* Grid Container */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -124,4 +68,65 @@ form {
     padding: 1rem;
     border: 1px solid #dd9933;
     border-radius: 10px;
+}
+
+/* Media Queries */
+
+/* Mobile (portrait) */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem; /* less padding for small screens */
+    }
+    header {
+        width: 100%;
+        height: auto;
+        margin: 1rem;
+    }
+    h1 {
+        font-size: 1.5rem; /* make h1 smaller on small screens */
+    }
+    .flex-container {
+        flex-direction: column; /* Stack flex items vertically */
+    }
+    .grid-container {
+        grid-template-columns: 1fr; /* Only one column in grid on small screens */
+    }
+    section {
+        max-width: 100%;
+    }
+}
+
+/* Tablet (portrait/landscape) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .flex-container {
+        flex-direction: row; /* Back to row layout */
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+    }
+    header {
+        width: 90%;
+        margin: 2rem auto;
+    }
+    h1 {
+        font-size: 2rem; /* Increase font size on tablet */
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .flex-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+    }
+    header {
+        width: 80%;
+        margin: 2rem auto;
+    }
+    h1 {
+        font-size: 2.5rem; /* Larger header on desktop */
+    }
 }
