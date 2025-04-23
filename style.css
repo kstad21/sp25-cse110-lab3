@@ -1,5 +1,5 @@
 :root {
-    --main-bg: hsl(210, 50%, 96%);
+    --main-bg: hsl(0, 0%, 100%);
 }
 
 body {
@@ -7,16 +7,15 @@ body {
     color: black;
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin: 5%; /* shorthand margin */
-    padding: 1.5 rem; /* shorthand padding */
     border: 0.1 cm solid purple; /* border shorthand */
     border-radius: 12px; /* border */
+    padding: 2rem; /* relative unit 1: rem, shorthand padding */
 }
 
 header {
     background-color: aliceblue; /* color name */
-    padding: 1%;
     /* longhand padding */
-    padding-top: 1%;
+    padding-top: 1%; /* relative unit 2 */
     padding-right: 2%;
     padding-bottom: 1%;
     padding-left: 2%;
@@ -39,7 +38,7 @@ h1 {
 
 h2 {
     color: #681793; /* hex code */
-    margin: 2%; /* shorthand margin */
+    margin: 2%; /* shorthand margin, relative unit 3 */
 }
 
 h3 {
@@ -50,14 +49,17 @@ h3 {
 h4 {
     color: color-mix(in srgb, blue 60%, red 40%); /* color mix */
     margin: 4%;
+    font-size: 11pt; /* absolute unit 1 */
 }
 
 #celebration {
     border: 2px dashed;
     background-color: rgb(255, 187, 233);
+    padding: 0.05cm; /* absolute unit 2 */
 }
 
 a {
+    font-size: 12pt; /* absolute unit 3 */
     color: red;
 }
 
