@@ -11,7 +11,7 @@ Insert participants here
 Add previous meeting notes or other reference materials
 
 ### Goals and progress 
-| Participants    | Priorities since we last met | Priorities untill we meet again | 
-| -------- | ------- |
-| participants  | what did we learn since last meeting? what were the previous goals?  | goals moving forward? |
+| Participants    | Priorities Since We Last Met                                                                 | Priorities Until We Meet Again                     |
+|----------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------|
+| [List names here] | What did we learn since the last meeting? What were the previous goals?                     | Goals moving forward?                              |
 
