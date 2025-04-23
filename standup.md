@@ -25,3 +25,7 @@ Add previous meeting notes or other reference materials
 | Topic | Description | Results | 
 |--------|------------|---------|
 | State topic | Describe topic and how it impacts work | Node the results and decisions made during the meeting | 
+
+### Action Items
+Add action items that you create during the meeting and check boxes as you make progress
+[] Action, asignee
