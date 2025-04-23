@@ -4,7 +4,7 @@
 
 body {
     background-color: var(--main-bg, white); /* fallback to white */
-    color: black;
+    color: black; /* text color */
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin: 5%; /* shorthand margin */
     border: 0.1 cm solid purple; /* border shorthand */
@@ -34,6 +34,8 @@ header {
 h1 {
     color: rgb(67, 0, 131); /* rgb color */
     margin: 1%; /* shorthand margin */
+    text-decoration: underline; /* text decoration */
+    text-align: center; /* text align */
 }
 
 h2 {
