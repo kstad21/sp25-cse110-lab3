@@ -1,16 +1,17 @@
 :root {
-    --main-bg: hsl(210, 50%, 96%);
+    --main-bg: hsl(0, 0%, 100%);
 }
 
 body {
     background-color: var(--main-bg, white); /* fallback to white */
     color: black;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 2rem; /* relative unit 1: rem */
 }
 
 header {
     background-color: aliceblue; /* color name */
-    padding: 1%;
+    padding: 1%; /* relative unit 2 */
 }
 
 h1 {
@@ -19,6 +20,7 @@ h1 {
 
 h2 {
     color: #681793; /* hex code */
+    margin-left: 10%; /* relative unit 3: percent */
 }
 
 h3 {
@@ -27,12 +29,15 @@ h3 {
 
 h4 {
     color: color-mix(in srgb, blue 60%, red 40%); /* color mix */
+    font-size: 11pt; /* absolute unit 1 */
 }
 
 #celebration {
     background-color: rgb(255, 187, 233);
+    padding: 0.05cm; /* absolute unit 2 */
 }
 
 a {
+    font-size: 12pt; /* absolute unit 3 */
     color: red;
 }
